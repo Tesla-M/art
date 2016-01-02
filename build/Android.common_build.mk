@@ -72,18 +72,9 @@ ART_TARGET_CFLAGS :=
 
 # Host.
 ART_HOST_CLANG := false
-ifneq ($(WITHOUT_HOST_CLANG),true)
-  # By default, host builds use clang for better warnings.
-  ART_HOST_CLANG := true
-endif
 
 # Clang on the target. Target builds use GCC by default.
-ifneq ($(USE_CLANG_PLATFORM_BUILD),)
-ART_TARGET_CLANG := $(USE_CLANG_PLATFORM_BUILD)
-else
 ART_TARGET_CLANG := false
-endif
-# b/25130937
 ART_TARGET_CLANG_arm := false
 ART_TARGET_CLANG_arm64 :=
 ART_TARGET_CLANG_mips :=
