@@ -76,14 +76,16 @@ void HInliner::Run() {
 // additional check for an inlinable method
 bool HInliner::CanInlineMethod(const DexCompilationUnit& ,
                                 HGraph&,
-                                HInvoke*) const {
+                                HInvoke*) const
+{
   return false;
 }
 
 // try if we can remove exception checks
 void HInliner::TryRemoveExceptionChecks(const DexCompilationUnit&,
                                         HGraph&,
-                                        HInvoke*) const {
+                                        HInvoke*) const
+{
     return;
 }
 

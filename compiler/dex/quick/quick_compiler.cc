@@ -494,7 +494,8 @@ static bool CanCompileShorty(const char* shorty, InstructionSet instruction_set)
 }
 
 // check certain conditions that we don't want Quick compiler to handle
-bool QuickCompiler::CheckMoreConditions(CompilationUnit*) const {
+bool QuickCompiler::CheckMoreConditions(CompilationUnit*) const
+{
   return true;
 }
 

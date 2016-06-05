@@ -326,7 +326,8 @@ HOptimization* GetMoreOptimizing(HGraph*,
 HOptimization* GetMoreOptimizing(HGraph*,
                                  const DexCompilationUnit&,
                                  CompilerDriver*,
-                                 OptimizingCompilerStats*) {
+                                 OptimizingCompilerStats*)
+{
   return nullptr;
 }
 
@@ -713,6 +714,7 @@ CompiledMethod* TryFastCompile(CompilerDriver*,
                                uint32_t,
                                jobject,
                                const DexFile&) {
+
   return nullptr;
 }
 

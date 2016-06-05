@@ -464,7 +464,8 @@ static bool EvaluateBranch(Instruction::Code opcode, int32_t src1, int32_t src2)
   return is_taken;
 }
 
-bool MIRGraph::SupportMLA() {
+bool MIRGraph::SupportMLA()
+{
   return true;
 }
 

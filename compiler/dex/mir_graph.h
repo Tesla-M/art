@@ -377,6 +377,7 @@ class MIR : public ArenaObject<kArenaAllocMIR> {
   MIR* Copy(MIRGraph* mir_Graph);
 
     ExtendedMIR* extraData;
+
 };
 
 struct SuccessorBlockInfo;
@@ -1301,7 +1302,7 @@ class MIRGraph {
   bool SupportMLA() QC_WEAK;
 
   void SetPassFail() { pass_failed_ = true; }
-  bool PassFailed() { return pass_failed_; }
+  bool PassFailed() { return pass_failed_; };
 
  protected:
   int FindCommonParent(int block1, int block2);
@@ -1519,6 +1520,7 @@ class MIRGraph {
 
   public:
   QCMIRGraph* qcm;
+
 };
 
 }  // namespace art
